@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="" xmlns:th="https://www.thymeleaf.org">
 
-
-
 <head>
     <title>My Blog</title>
     <link rel="shortcut icon" type="image/png" href="iconImage.jpg">
@@ -10,9 +8,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
-        h1, h2, p { font-family: Verdana,sans-serif;
-            text-align: center;
+        .header-1 {
+            font-family: brandon-grotesque, Helvetica, sans-serif;
+            font-size: 50px;
+            font-style: normal;
+            font-weight: 900;
+            letter-spacing: 1px;
+            line-height: normal;
+            text-transform: uppercase;
+            color: #252C37;
+            text-align: left;
         }
+
     </style>
 </head>
 
@@ -25,7 +32,12 @@
      width="100%"
      height="auto"
 >
-<h1> Welcome to My Blog </h1>
+<h1 class="header-1">
+    Hi,<br>
+    I'm Luke,<br>
+    A Fullstack Dev. <br>
+</h1>
+
 <p>
     This blog contains each progression I make as I create my first website.
 </p>
