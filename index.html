@@ -8,6 +8,8 @@
     <title>Personal Portfolio Website | Luke Smith</title>
     <link rel="shortcut icon" type="image/png" href="img/iconImage.jpg">
     <link rel="stylesheet" href="style.css">
+
+    <!--BOX ICONS-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
@@ -15,11 +17,13 @@
     <!--NAV BAR-->
     <header class="header">
         <!--FIXME: Make this the default url-->
-        <a href="#" class="logo">Luke.</a>
+        <a href="https://lukesmith25.github.io/MyBlog/" target="_blank" class="logo">Luke.</a>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
 
         <!--FIXME: Add JS scripts to redirect to subdomains-->
         <nav class="navbar">
-            <a href="#">Home</a>
+            <a href="#" class="active">Home</a>
             <a href="#">About</a>
             <a href="#">Portfolio</a>
             <a href="#">Blog</a>
@@ -27,19 +31,24 @@
         </nav>
     </header>
 
-    <!-- LANDING PAGE -->
-    <section class="home">
+    <!-- HOME SECTION DESIGN -->
+    <section class="home" id="home">
         <div class="home-content">
-            <h1> Hi, I'm Luke Smith</h1>
-            <h3>Fullstack Engineer</h3>
+            <h1> Hi, I'm <span>Luke Smith</span></h1>
+            <div class="text-animate">
+                <h3>Fullstack Engineer</h3>
+            </div>
             <p>I am learning how to write HTML and CSS so that
             I can establish a good foundation for learning frontend
             development and later react.</p>
+
             <div class="btn-box">
-                <a href="#">Hire Me</a>
-                <a href="#">Let's Talk</a>
+                <a href="#" class="btn">Hire Me</a>
+                <a href="#" class="btn">Let's Talk</a>
             </div>
         </div>
+
+        <script src="js/script.js"></script>
 
         <!-- SOCIALS BUTTONS -->
         <div class="home-sci">
@@ -49,6 +58,9 @@
 
         <!-- SPAN EFFECT -->
         <span class="home-imgHover"></span>
+
+        <!-- ABOUT SECTION -->
+
     </section>
 </body>
 
