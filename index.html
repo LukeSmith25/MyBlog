@@ -7,32 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website | Luke Smith</title>
     <link rel="shortcut icon" type="image/png" href="img/iconImage.jpg">
+    <!-- Style Sheet -->
     <link rel="stylesheet" href="style.css">
 
-    <!--BOX ICONS-->
+    <!--Box Icons-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-    <!--NAV BAR-->
+    <!-- Header Design -->
     <header class="header">
-        <!--FIXME: Make this the default url-->
         <a href="https://lukesmith25.github.io/MyBlog/" target="_blank" class="logo">Luke.</a>
 
         <div class="bx bx-menu" id="menu-icon"></div>
 
-        <!--FIXME: Add JS scripts to redirect to subdomains-->
         <nav class="navbar">
-            <a href="#" class="active">Home</a>
-            <a href="#">About</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Blog</a>
-            <a href="#">Contact</a>
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#blog">Blog</a>
+            <a href="#contant">Contact</a>
         </nav>
     </header>
 
     <!-- HOME SECTION DESIGN -->
     <section class="home" id="home">
+        <!-- Home Section -->
         <div class="home-content">
             <h1> Hi, I'm <span>Luke Smith</span></h1>
             <div class="text-animate">
@@ -41,16 +41,14 @@
             <p>I am learning how to write HTML and CSS so that
             I can establish a good foundation for learning frontend
             development and later react.</p>
-
+            <!-- Button Box -->
             <div class="btn-box">
                 <a href="#" class="btn">Hire Me</a>
                 <a href="#" class="btn">Let's Talk</a>
             </div>
         </div>
 
-        <script src="js/script.js"></script>
-
-        <!-- SOCIALS BUTTONS -->
+        <!-- Socials Buttons -->
         <div class="home-sci">
             <a href="#"><i class='bx bxl-github' ></i></a>
             <a href="#"><i class='bx bxl-linkedin-square' ></i></a>
@@ -58,10 +56,29 @@
 
         <!-- SPAN EFFECT -->
         <span class="home-imgHover"></span>
-
-        <!-- ABOUT SECTION -->
-
     </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+        <h2 class="header">About<span>Me</span></h2>
+
+        <div class="about-img">
+            <img src="img/Account.gif" alt="Account GIF">
+            <span class="circle-spin"></span>
+        </div>
+
+        <div class="about-content">
+            <h3>Fullstack Developer!</h3>
+            <p>My name is Luke Smith, I am a fullstack developer.</p>
+
+            <div class="btn-box btns">
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Script -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>
