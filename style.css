@@ -1,5 +1,7 @@
+/* IMPORT FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
+/* ALL */
 * {
     margin: 0;
     padding: 0;
@@ -7,10 +9,13 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* BODY */
 body{
     background: #081b29;
     color: #ededed;
 }
+
+/* HEADER */
 .header {
     position: fixed;
     top: 0;
@@ -23,13 +28,28 @@ body{
     align-items: center;
     z-index: 100;
 }
+
+/* LOGO */
 .logo {
+    position: relative;
     font-size: 25px;
     color: #ededed;
     text-decoration: none;
     font-weight: 600;
 }
+.logo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+}
 
+/* NAVBAR */
 .navbar a {
     font-size: 18px;
     color: #ededed;
@@ -43,36 +63,101 @@ body{
     color: #00abf0;
 }
 
+/* HOME SECTION */
 .home {
     height: 100vh;
     display: flex;
+    background: url('img/programming.jpg') no-repeat right;
+    background-size: 40%;
     align-items: center;
     padding: 0 10%;
 }
+.home img {
+    display: -webkit-box;
+    background-size: 100px;
+    float: right;
+    background-size: 10%;
+}
 
+/* HOME CONTENT (HEADERS/PARAGRAPH) */
 .home-content {
-    background: transparent;
     max-width: 600px;
 }
+
 .home-content h1 {
+    position: relative;
     font-size: 56px;
     font-weight: 700;
+    line-height: 1.2;
 }
+.home-content h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
 .home-content h3 {
+    position: relative;
     font-size: 32px;
     font-weight: 700;
     color: #00abf0;
 }
+.home-content h3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.3s;
+}
+
 .home-content p {
+    position: relative;
     font-size: 16px;
     margin: 20px 0 40px;
 }
+.home-content p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.6s;
+}
+
+/* BUTTON BOXES */
 .home-content .btn-box {
+    position: relative;
     display: flex;
     justify-content: space-between;
     width: 345px;
     height: 50px;
 }
+.home-content .btn-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.9s;
+    z-index: 2;
+}
+/* BUTTONS */
 .btn-box a {
     position: relative;
     display: inline-flex;
@@ -95,20 +180,16 @@ body{
 .btn-box a:hover {
     color: #00abf0;
 }
-
 .btn-box a:nth-child(2) {
     background: transparent;
     color: #00abf0;
 }
-
 .btn-box a:nth-child(2):hover {
     color: #081b29;
 }
-
 .btn-box a:nth-child(2)::before {
     background: #00abf0;
 }
-
 .btn-box a::before {
     content: '';
     position: absolute;
@@ -120,11 +201,11 @@ body{
     z-index: -1;
     transition: .5s;
 }
-
 .btn-box a:hover::before {
     width: 100%;
 }
 
+/*START OF THE SOCIAL BUTTONS*/
 .home-sci {
     position: absolute;
     bottom: 40px;
@@ -132,7 +213,18 @@ body{
     display: flex;
     justify-content: space-between;
 }
-
+.home-sci::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 2.5s;
+    z-index: 2;
+}
 .home-sci a {
     position: relative;
     display: inline-flex;
@@ -150,11 +242,9 @@ body{
     overflow: hidden;
     transition: .5s;
 }
-
 .home-sci a:hover {
     color: #081b29;
 }
-
 .home-sci a::before {
     content: '';
     position: absolute;
@@ -166,66 +256,49 @@ body{
     z-index: -1;
     transition: .5s;
 }
-
 .home-sci a:hover::before {
-    width: 100%;
+    width: 120%;
 }
-
-
-
-
-.name {
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: bold;
-    letter-spacing: normal;
-    line-height: 24px;
-    text-transform: none;
-    color: blueviolet;
-}
-
-.welcome {
-    font-family: Montserrat, sans-serif;
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 300;
-    letter-spacing: normal;
-    line-height: 35px;
-    text-transform: full-size-kana;
-    color: #5C5C5C;
-    text-align: left;
-}
-
-.header-1 {
-    font-family: Montserrat, sans-serif;
-    font-size: 26px;
-    font-style: normal;
-    font-weight: bolder;
-    letter-spacing: normal;
-    line-height: 35px;
-    text-transform: uppercase;
-    color: #5C5C5C;
-    text-align: left;
-}
-
-.content-1 {
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: normal;
-    letter-spacing: normal;
-    line-height: 24px;
-    text-transform: none;
-    color: #34495E;
-}
-img.background {
+/* HOVER IMAGE */
+/*FIXME: TRANSITION DOES NOT LINE UP PERFECTLY*/
+.home-imgHover {
     position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: -1;
-    width: 100%;
+    top: 0;
+    right: 0;
+    width: 40%;
     height: 100%;
-    -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
-    filter: blur(5px);
+    background: transparent;
+    transition: 3s;
+    animation: manipActiveHover .1s forwards;
+    animation-delay: 4s;
+    pointer-events: none;
+}
+.home-imgHover:hover {
+    background: #081b29;
+    opacity: .8;
+    width: 40%;
+}
+.home-imgHover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 120%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 3s;
+    z-index: 100;
+}
+
+/*KEYFRAMES ANIMATION*/
+@keyframes showRight {
+    100% {
+        width: 0;
+    }
+}
+@keyframes manipActiveHover {
+    100% {
+        pointer-events: auto;
+    }
 }
