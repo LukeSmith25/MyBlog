@@ -108,7 +108,7 @@ span {
     display: flex;
     align-items: center;
     padding: 0 9%;
-    background: url('img/programming.jpg') no-repeat right;
+    background: url('programming.jpg') no-repeat right;
     background-size: clamp(100px, 50%, 1000px) auto;
     -webkit-background-size: clamp(100px, 40%, 1000px) auto;
 }
