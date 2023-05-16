@@ -108,7 +108,7 @@ span {
     display: flex;
     align-items: center;
     padding: 0 9%;
-    background: url('programming.jpg') no-repeat right;
+    background: url('img/programming.jpg') no-repeat right;
     background-size: clamp(100px, 50%, 1000px) auto;
     -webkit-background-size: clamp(100px, 40%, 1000px) auto;
 }
@@ -475,6 +475,15 @@ span {
 .portfolio-content .content p {
     font-size: 1.6rem;
     padding-top: .5rem;
+}
+
+
+
+/* BLOG SECTION */
+.blog {
+    min-height: auto;
+    padding-bottom: 7rem;
+    background: var(--second-bg-color);
 }
 
 
