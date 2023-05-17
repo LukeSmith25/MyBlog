@@ -488,16 +488,18 @@ span {
 
 .blog-box-container {
     display: grid;
+    object-position: center;
+    align-items: center;
+    justify-items: center;
     grid-template-columns: 1fr 1fr 1fr;
     max-width: 105rem;
     width: 90%;
     margin-top: 5rem;
-    justify-content: center;
 }
 
 .blog-box {
     position: relative;
-    justify-content: center;
+    align-items: center;
     max-width: 100%;
     width: 100%;
     height: auto;
@@ -508,7 +510,7 @@ span {
 
 .blog-box:hover {
     background-color: #ffffff;
-    box-shadow: 1.6rem 2rem 5rem rgba(0, 0, 0, .3);
+    box-shadow: 1.6rem 2rem 5rem var(--bg-color);
 }
 
 .blog-box-img {
@@ -537,12 +539,12 @@ span {
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
-    background: #ffffff;
+    background: var(--text-color);
     color: #252525;
-    box-shadow: .2rem .2rem 3rem rgba(20, 97, 212, .2);
+    box-shadow: .2rem .2rem 3rem var(--bg-color);
     animation: fade .3s;
 }
 
@@ -583,13 +585,18 @@ span {
 }
 .blog-box-text strong,
 .blog-box-text p {
-    color: #797979;
-    font-size: 0.9rem;
+    color: var(--text-color);
+    font-size: 1.5rem;
     font-weight: 400;
 }
+.blog-box:hover .blog-box-text strong,
+.blog-box:hover .blog-box-text p {
+    color: var(--bg-color);
+}
+
 .blog-box-text a {
     font-size: 1.4rem;
-    color: #252525;
+    color: var(--main-color);
     font-weight: 800;
     line-height: 1.8rem;
     margin: 5px 0 10px 0;
@@ -626,11 +633,11 @@ span {
     flex-direction: column;
 }
 .blog-author-text strong {
-    color: #252525;
+    color: var(--main-color);
     font-weight: 800;
 }
 .blog-author-text span {
-    color: #797979;
+    color: var(--text-color);
     font-size: .8rem;
     font-weight: 500;
 }
