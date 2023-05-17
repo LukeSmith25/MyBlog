@@ -489,6 +489,13 @@ span {
 .portfolio-content .content h3 {
     font-size: 2rem;
 }
+.portfolio-content .content a {
+    font-size: 1.5rem;
+    color: var(--main-color);
+    font-weight: 800;
+    line-height: 1.8rem;
+    margin: 5px 0 10px 0;
+}
 .portfolio-content .content p {
     font-size: 1.6rem;
     padding-top: .5rem;
