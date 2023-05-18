@@ -101,7 +101,7 @@
         <!-- portfolio rows -->
         <div class="portfolio-row">
 
-            <!-- COLUMN 1 -->
+            <!-- Projects Column -->
             <div class="portfolio-column">
                 <!-- Projects Section Title -->
                 <h3 class="title">Projects</h3>
@@ -141,10 +141,10 @@
                 </div>
             </div>
 
-            <!-- COLUMN 2 -->
+            <!-- Education and Certifications Column -->
             <div class="portfolio-column">
-                <!-- projects title -->
-                <h3 class="title">Experience</h3>
+                <!-- Education and Certifications Section Title -->
+                <h3 class="title">Education & Certifications</h3>
 
                 <!-- portfolio boxes and content -->
                 <div class="portfolio-box">
@@ -255,25 +255,36 @@
 
     <!-- CONTACT SECTION DESIGN -->
     <section class="contact hidden" id="contact">
+        <!-- contact header -->
         <h2 class="heading">Contact <span>Me</span></h2>
 
-        <form action="#">
+
+        <form action="https://formsubmit.co/luke_smith@smithsoftware.tech" method="POST">
+            <!-- subject for email -->
+            <input type="hidden" name="_subject" value="New Contact!!">
+
             <div class="input-box">
+                <!-- name input section -->
                 <div class="input-field">
-                    <input type="text" placeholder="Full Name" required>
+                    <input type="text" name="Name" placeholder="Full Name" required>
                     <span class="focus"></span>
                 </div>
+                <!-- email address input section -->
                 <div class="input-field">
-                    <input type="text" placeholder="Email Address" required>
+                    <input type="text" name="Email" placeholder="Email Address" required>
                     <span class="focus"></span>
                 </div>
             </div>
-
+            <!-- body input section -->
             <div class="textarea-field">
-                <textarea name="" id="" cols="" rows="10" placeholder="Your Message" required></textarea>
+                <textarea name="Message" id="" cols="" rows="10" placeholder="Your Message" required></textarea>
                 <span class="focus"></span>
             </div>
 
+            <!-- thank you and page redirect -->
+            <input type="hidden" name="_next" value="https://lukesmith25.github.io/PortfolioWebsite/">
+
+            <!-- submit button -->
             <div class="btn-box btns">
                 <button type="submit" class="btn">Submit</button>
             </div>
