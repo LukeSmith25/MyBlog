@@ -468,6 +468,7 @@ span {
     border: .2rem solid var(--main-color);
     border-radius: .6rem;
     margin-bottom: 2rem;
+    max-width: 90rem;
     overflow: hidden;
 }
 .portfolio-content .content::before {
