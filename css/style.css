@@ -200,7 +200,7 @@ span {
     margin-left: 10rem;
     width: 600px;
     height: auto;
-    background: url("https://github.com/LukeSmith25/PortfolioWebsite/blob/master/developersTeam.json") right;
+    background: url("developersTeam.json") right;
 }
 
 
