@@ -49,3 +49,28 @@ const oberserver = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => oberserver.observe(el));
+
+
+
+// Background SVG Animation
+const animation = bodymovin.loadAnimation({
+    container: document.getElementById('animContainer'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: '../developersTeam.json' // lottie file path
+});
+
+
+const play = document.querySelector(".home-svg");
+const svgContainer = document.getElementById("svg");
+const animItem = bodymovin.loadAnimation({
+    wrapper: svgContainer,
+    animType: 'svg',
+    loop: false,
+    autoplay: false,
+    path: "../developersTeam.json"
+});
+play.addEventListener("fullscreenchange", () => {
+    animItem.goToAndPlay(0,true);
+})

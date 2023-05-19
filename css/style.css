@@ -125,9 +125,6 @@ span {
     display: flex;
     align-items: center;
     padding: 0 9%;
-    background: url('programming.jpg') no-repeat right;
-    background-size: clamp(100px, 50%, 1000px) auto;
-    -webkit-background-size: clamp(100px, 40%, 1000px) auto;
 }
 
 /* HOME CONTENT (HEADERS/PARAGRAPH) */
@@ -199,10 +196,18 @@ span {
     animation-delay: 1.6s;
 }
 
-.home img {
-    display: -webkit-box;
-    float: right;
-    background-size: 50%;
+#animContainer {
+    width: 60%;
+    height: auto;
+    background: url("../developersTeam.json") right;
+}
+
+.home-svg {
+    width: 200px;
+    position: absolute;
+    pointer-events: none;
+    object-fit: contain;
+    object-position: right;
 }
 
 
