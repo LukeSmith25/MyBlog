@@ -129,7 +129,7 @@ span {
 
 /* HOME CONTENT (HEADERS/PARAGRAPH) */
 .home-content {
-    max-width: 60rem;
+    max-width: 100rem;
     z-index: 99;
 }
 
@@ -197,18 +197,13 @@ span {
 }
 
 #animContainer {
-    width: 60%;
+    margin-left: 10rem;
+    width: 600px;
     height: auto;
     background: url("../developersTeam.json") right;
 }
 
-.home-svg {
-    width: 200px;
-    position: absolute;
-    pointer-events: none;
-    object-fit: contain;
-    object-position: right;
-}
+
 
 
 /* Button Box Class */
@@ -941,6 +936,13 @@ span {
 @media (max-width: 426px) {
     .home-content h1 {
         font-size: 5.2rem;
+    }
+    #animContainer {
+        margin:-60rem 0 0 10rem;
+        width: 200px;
+        height: auto;
+        position: absolute;
+        opacity: 75%;
     }
     .portfolio {
         padding: 10rem 4% 5rem 5%;
