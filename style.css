@@ -197,10 +197,10 @@ span {
 }
 
 #animContainer {
-    margin-left: 10rem;
-    width: 600px;
-    height: auto;
-    background: url("developersTeam.json") right;
+    /*background: url("svg/homescreen.svg") right;*/
+    width: 70%;
+    height: 70%;
+    /*margin-left: 10rem;*/
 }
 
 
