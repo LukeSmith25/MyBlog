@@ -58,5 +58,5 @@ const animation = bodymovin.loadAnimation({
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: '../developersTeam.json' // lottie file path
+    path: 'developersTeam.json' // lottie file path
 });
