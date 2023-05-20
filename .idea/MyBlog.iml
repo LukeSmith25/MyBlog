@@ -11,5 +11,8 @@
     <orderEntry type="library" name="boxicons" level="application" />
     <orderEntry type="library" name="bodymovin" level="application" />
     <orderEntry type="library" name="boxicons" level="application" />
+    <orderEntry type="library" name="@lottiefiles/lottie-player" level="application" />
+    <orderEntry type="library" name="@lottiefiles/lottie-interactivity" level="application" />
+    <orderEntry type="library" name="bodymovin" level="application" />
   </component>
 </module>
