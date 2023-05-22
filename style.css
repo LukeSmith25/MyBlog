@@ -677,6 +677,18 @@ span {
     font-size: .8rem;
     font-weight: 500;
 }
+.blog-btn-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 34.5rem;
+    height: 5rem;
+}
+.blog-btn-box .btn {
+    display: inline-flex;
+    align-content: center;
+    font-size: 2.0rem;
+}
 
 
 
