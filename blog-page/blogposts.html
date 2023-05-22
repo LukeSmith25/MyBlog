@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="https://www.thymeleaf.org">
 
-<!-- START OF HEADER -->
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Tab Design -->
-  <title>Blog Posts</title>
-  <link rel="shortcut icon" type="image/png" href="img/iconImage.jpg">
+  <title>Blog Posts | Luke Smith</title>
+  <link rel="shortcut icon" type="image/png" href="../svg/icon.svg">
 
   <!-- Style Sheet -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
 
   <!--Box Icons-->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- BodyMovin Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.11.0/lottie.min.js"></script>
+
 </head>
 
 <!-- START OF BODY -->
 <body>
   <header class="header">
-    <a href="index.html" class="logo">Luke.</a>
+    <a href="../index.html" class="logo">Luke.</a>
 
     <div class="bx bx-menu" id="menu-icon"></div>
 
     <nav class="navbar">
-      <a href="#home" class="active">Home</a>
-      <a href="#featured">Featured Posts</a>
-      <a href="#all">All Posts</a>
+      <a href="../index.html">Home</a>
+      <a href="#blog" class="active">Blog</a>
+      <a href="#featured-posts">Featured Posts</a>
+      <a href="#all-posts">All Posts</a>
 
       <span class="active-nav"></span>
     </nav>
@@ -37,19 +41,25 @@
 
 
   <!-- HOME PAGE DESIGN -->
-  <section class="home">
+  <section class="blog" id="blog">
     <!-- thank you section content -->
     <div class="home-content">
 
       <h1><span>Documenting My Growth</span> As A</h1>
+
       <div class="text-animate">
         <h3>Full-Stack Developer</h3>
       </div>
 
-      <!-- button box -->
-      <div class="btn-box">
-        <a href="index.html" class="btn">Go Back</a>
+      <div class="type-container">
+        <p>
+          <span class="auto-typed">Here on my blog I plan to share each day I spend working and learning to become a more flexible and practical
+          software engineer.</span>
+          <span class="auto-typed"> Let this be an inspiration to anyone who wants to learn programming but does not know how
+            to start chipping away at becoming a programmer! </span>
+        </p>
       </div>
+
     </div>
 
   </section>
@@ -57,16 +67,12 @@
 
 
   <!---- FEATURED POSTS ---->
-  <section class="featured">
+  <section class="featured-posts" id="featured-posts">
     <!-- thank you section content -->
     <div class="home-content">
 
-      <h1>Recent Blogs</h1>
+      <h1>Featured Blogs</h1>
 
-      <!-- button box -->
-      <div class="btn-box">
-        <a href="index.html" class="btn">Go Back</a>
-      </div>
     </div>
 
   </section>
@@ -74,19 +80,16 @@
 
 
   <!---- ALL POSTS ---->
-  <section class="featured">
+  <section class="all-posts" id="all-posts">
     <!-- thank you section content -->
     <div class="home-content">
 
-      <h1>Recent Blogs</h1>
+      <h1>All Blogs</h1>
 
-      <!-- button box -->
-      <div class="btn-box">
-        <a href="index.html" class="btn">Go Back</a>
-      </div>
     </div>
-
   </section>
+
+
 
   <!-- FOOTER SECTION DESIGN -->
   <footer class="footer">
@@ -102,7 +105,9 @@
   </footer>
 
   <!---- Script -->
-  <script defer src="script.js"></script>
+  <script src="../js/typingEffect.js"></script>
+  <script defer src="../script.js"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 </body>
 
 </html>
