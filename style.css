@@ -544,7 +544,7 @@ span {
     padding-top: .5rem;
 }
 
-
+/* FIXME: add transform to images */
 
 
 
@@ -649,6 +649,7 @@ span {
 .blog-box:hover .blog-box-img img {
     filter: blur(3px);
 }
+
 @keyframes fade {
     0% {
         opacity: 0;
