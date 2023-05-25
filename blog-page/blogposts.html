@@ -11,6 +11,7 @@
   <link rel="shortcut icon" type="image/png" href="../svg/icon.svg">
 
   <!-- Style Sheet -->
+  <link rel="stylesheet" href="../css/blog-style.css">
   <link rel="stylesheet" href="../style.css">
 
   <!--Box Icons-->
@@ -38,50 +39,33 @@
     </nav>
   </header>
 
+  <!---- HOME PAGE DESIGN ---->
+  <section class="blog-home hidden" id="blog">
 
+    <div class="blog-home-content">
 
-  <!-- HOME PAGE DESIGN -->
-  <section class="blog" id="blog">
-    <!-- thank you section content -->
-    <div class="home-content">
+      <div class="blog-heading">
 
-      <h1><span>Documenting My Growth</span> As A</h1>
-
-      <div class="text-animate">
-        <h3>Full-Stack Developer</h3>
       </div>
+      <!-- Intro Heading -->
+      <h1 class="first-line">Follow My</h1>
+      <div class="text-animate"><h3>Full-Stack Dev</h3></div>
+      <h1 class="second-line">Journey</h1>
 
-      <div class="type-container">
-        <p>
-          <span class="auto-typed">Here on my blog I plan to share each day I spend working and learning to become a more flexible and practical
-          software engineer.</span>
-          <span class="auto-typed"> Let this be an inspiration to anyone who wants to learn programming but does not know how
-            to start chipping away at becoming a programmer! </span>
-        </p>
-      </div>
-
+      <!-- Bio Section -->
+      <p class="bio">
+        Join me on this exciting journey, as I learn and grow to become a well-rounded software engineer, day by day. This blog is all about unraveling the complex world of coding and making it easy for everyone to understand. Whether you're just starting out and don't know where to begin, or you're already into coding and want to get better, this blog is your guide to becoming a great coder. Let's dive into the exciting world of software engineering and fuel our passion for coding, together!
+      </p>
     </div>
 
-  </section>
-
-
-
-  <!---- FEATURED POSTS ---->
-  <section class="featured-posts" id="featured-posts">
-    <!-- thank you section content -->
-    <div class="home-content">
-
-      <h1>Featured Blogs</h1>
-
-    </div>
+    <div class="svg" id="svg"></div>
 
   </section>
 
 
 
   <!---- ALL POSTS ---->
-  <section class="all-posts" id="all-posts">
-    <!-- thank you section content -->
+  <section class="all-posts hidden" id="all-posts">
     <div class="home-content">
 
       <h1>All Blogs</h1>
@@ -105,9 +89,22 @@
   </footer>
 
   <!---- Script -->
-  <script src="../js/typingEffect.js"></script>
+<!--  <script src="../js/typingEffect.js"></script>-->
   <script defer src="../script.js"></script>
-  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<!--  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>-->
+
+  <script>
+
+    const svgContainer = document.getElementById('svg');
+    const animItem = bodymovin.loadAnimation({
+      wrapper: svgContainer,
+      animType: 'svg',
+      loop: true,
+      autoplay: true,
+      path: '../json/LanguagesAnimation.json'
+    })
+
+  </script>
 </body>
 
 </html>

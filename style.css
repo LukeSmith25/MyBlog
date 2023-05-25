@@ -133,6 +133,7 @@ span {
     display: flex;
     align-items: center;
     padding: 0 9%;
+    min-height: 101vh;
 }
 
 /* HOME CONTENT (HEADERS/PARAGRAPH) */
