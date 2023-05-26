@@ -1,3 +1,6 @@
+/*@import "https://unpkg.com/open-props";*/
+/*@import "https://unpkg.com/open-props/normalize.min.css";*/
+
 section {
     min-height: 100vh;
 }
@@ -106,9 +109,15 @@ section {
     color: var(--text-color);
     font-size: 1.6rem;
     max-width: 100rem;
-
     bottom: 6vh;
     left: 13rem;
+    margin-top: 5rem;
+
+    line-height: 2.5vh;
+    padding-left: 2rem;
+    border-left: 5px solid var(--main-color);
+    border-right: 5px solid var(--main-color);
+    border-radius: 5px;
 
     background-color: rgba(8, 27, 41, .6);
 }
@@ -150,28 +159,15 @@ section {
 /*    animation-delay: 1.6s;*/
 
 /*}*/
-
-
-
-/* Featured blog-homes Section */
-.featured-posts {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 2rem;
-    background: var(--second-bg-color);
-    padding-bottom: 6rem;
-    background-image: url("../svg/endless-constellation.svg");
-    background-attachment: fixed;
-    background-size: 500px 500px;
-    background-clip: border-box;
+.heading {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
 }
 
  /* ALL POSTS SECTION */
 .all-posts {
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 2rem;
@@ -180,4 +176,80 @@ section {
     background-image: url("../svg/endless-constellation.svg");
     background-attachment: fixed;
     background-clip: border-box;
+}
+.all-posts strong {
+    position: relative;
+    font-size: 2rem;
+    text-align: left;
+    color: var(--main-color);
+}
+
+.media-scroller {
+    --_spacer: 1.5rem;
+    display: grid;
+    gap: var(--_spacer);
+    grid-auto-flow: column;
+    /* change based on size */
+    grid-auto-columns: 21%;
+
+    padding: 0 var(--_spacer) var(--_spacer);
+
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+}
+
+.media-element {
+    display: grid;
+    grid-template-rows: min-content;
+    gap: var(--_spacer);
+    padding: var(--_spacer);
+    background-color: rgba(17, 46, 66, .8);
+    border-radius: 5px;
+    box-shadow: 5px 5px rgba(1, 1, 1, .1);
+}
+
+.media-element > object {
+    inline-size: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.snaps-inline {
+    scroll-snap-type: inline mandatory;
+}
+.snaps-inline > * {
+    scroll-snap-align: start;
+    scroll-padding-inline: var(--_spacer, 1rem);
+}
+
+
+/* SCROLL BAR OVERRIDE */
+::-webkit-scrollbar {
+    width: 2em;
+    height: 1.5em;
+}
+
+::-webkit-scrollbar-track {
+    /*hsl(120 75% 50% / 1)*/
+    background: linear-gradient(var(--bg-color), var(--second-bg-color));
+    border-radius: 100vw;
+    margin-block: .5em;
+}
+
+::-webkit-scrollbar-thumb {
+    /* hsl(120 100% 20% / 1) */
+    background: linear-gradient(var(--second-bg-color), var(--bg-color));
+    /* hsl(120 75% 50% / 1) */
+    border: .25em solid hsla(197, 100%, 47%, 0.75);
+    border-radius: 100vw;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--main-color);
+}
+
+@supports (scrollbar-color: red blue) {
+    * {
+        /* Thumb then track */
+        scrollbar-color: linear-gradient(var(--bg-color), var(--second-bg-color)) hsl(120 75% 50% / 1);
+    }
 }

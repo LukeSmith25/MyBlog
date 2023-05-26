@@ -56,6 +56,37 @@ section {
     }
 }
 
+/* SCROLL BAR OVERRIDE */
+::-webkit-scrollbar {
+    width: 2em;
+    height: 1.5em;
+}
+
+::-webkit-scrollbar-track {
+    /*hsl(120 75% 50% / 1)*/
+    background: linear-gradient(var(--bg-color), var(--second-bg-color));
+    border-radius: 100vw;
+    margin-block: .5em;
+}
+
+::-webkit-scrollbar-thumb {
+    /* hsl(120 100% 20% / 1) */
+    background: linear-gradient(var(--second-bg-color), var(--bg-color));
+    /* hsl(120 75% 50% / 1) */
+    border: .25em solid hsla(197, 100%, 47%, 0.75);
+    border-radius: 100vw;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--main-color);
+}
+
+@supports (scrollbar-color: red blue) {
+    * {
+        /* Thumb then track */
+        scrollbar-color: linear-gradient(var(--bg-color), var(--second-bg-color)) hsl(120 75% 50% / 1);
+    }
+}
+
 /* Span Definition */
 span {
     color: var(--main-color);

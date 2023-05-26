@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectResources">
+    <resource url="https://unpkg.com/open-props" location="$PROJECT_DIR$" />
+    <resource url="https://unpkg.com/open-props/normalize.min.css" location="$PROJECT_DIR$" />
+  </component>
+</project>
