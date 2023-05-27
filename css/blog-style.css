@@ -3,6 +3,7 @@
 
 section {
     min-height: 100vh;
+    padding: 10rem 9% 2rem;
 }
 
 /*---- blog-home SECTION ----*/
@@ -123,42 +124,6 @@ section {
 }
 
 
-/*.blog-home-content h1::before {*/
-/*    content: '';*/
-/*    position: absolute;*/
-/*    top: 0;*/
-/*    right: 0;*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*    background: #081b29;*/
-/*    animation: showRight 1s ease forwards;*/
-/*    animation-delay: 1s;*/
-/*}*/
-
-/*.blog-home-content h3::before {*/
-/*    content: '';*/
-/*    position: absolute;*/
-/*    top: 0;*/
-/*    right: 0;*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*    background: #081b29;*/
-/*    animation: showRight 1s ease forwards;*/
-/*    animation-delay: 1.3s;*/
-/*}*/
-
-/*.blog-home-content p::before {*/
-/*    content: '';*/
-/*    position: absolute;*/
-/*    top: 0;*/
-/*    right: 0;*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*    background: #081b29;*/
-/*    animation: showRight 1s ease forwards;*/
-/*    animation-delay: 1.6s;*/
-
-/*}*/
 .heading {
     font-size: 5rem;
     margin-bottom: 3rem;
@@ -197,29 +162,102 @@ section {
     overflow-x: auto;
     overscroll-behavior-inline: contain;
 }
-
-.media-element {
-    display: grid;
-    grid-template-rows: min-content;
-    gap: var(--_spacer);
-    padding: var(--_spacer);
-    background-color: rgba(17, 46, 66, .8);
-    border-radius: 5px;
-    box-shadow: 5px 5px rgba(1, 1, 1, .1);
-}
-
-.media-element > object {
-    inline-size: 100%;
-    aspect-ratio: 16/9;
-    object-fit: cover;
-}
-
 .snaps-inline {
     scroll-snap-type: inline mandatory;
 }
 .snaps-inline > * {
     scroll-snap-align: start;
     scroll-padding-inline: var(--_spacer, 1rem);
+}
+
+.media-element {
+    display: grid;
+    grid-template-rows: min-content;
+    align-items: center;
+    justify-content: center;
+    gap: var(--_spacer);
+    padding: var(--_spacer);
+
+    background-color: rgba(17, 46, 66, .8);
+    border-radius: .5rem;
+    box-shadow: .5rem .5rem rgba(1, 1, 1, .25);
+    cursor: pointer;
+    position: relative;
+}
+.media-element:hover {
+    background-color: #ffffff;
+    box-shadow: 1.6rem 2rem 5rem var(--bg-color);
+}
+.media-element .link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+/*** Container for actual image ***/
+.media-element-img {
+    object-fit: contain;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.media-element-img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.media-element > img {
+    inline-size: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+/*.media-element:hover .media-element-img img {*/
+/*    filter: blur(3px);*/
+/*}*/
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Media Text Section */
+.media-element-text {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.media-element-text p {
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.media-element:hover .media-element-text p {
+    color: var(--bg-color);
+}
+
+.media-element-text a {
+    font-size: 1.4rem;
+    color: var(--main-color);
+    font-weight: 800;
+    line-height: 1.8rem;
+    margin: 5px 0 10px 0;
+}
+.media-element-text p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 
 
@@ -253,3 +291,53 @@ section {
         scrollbar-color: linear-gradient(var(--bg-color), var(--second-bg-color)) hsl(120 75% 50% / 1);
     }
 }
+
+section {
+    min-height: 100vh;
+    max-height: 200vh;
+}
+/*** BLOG POST SECTION ***/
+.blog-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background: var(--bg-color);
+    padding-bottom: 6rem;
+    min-height: 100vh;
+    height: 100vh;
+    max-height: 200vh;
+}
+.blog-page .heading {
+    font-size: 3.6rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.blog-page-img {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blog-page-img img {
+    width: 100%;
+    border: .2rem solid var(--text-color);
+}
+
+.blog-page-content {
+    text-align: center;
+    height: auto;
+}
+.blog-page-content h3 {
+    font-size: 2.6rem;
+    color: var(--main-color);
+}
+.blog-page-content p {
+    font-size: 1.6rem;
+    margin: 1rem 0 1rem;
+}
+
+

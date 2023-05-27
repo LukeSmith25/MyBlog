@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<html lang="en" xmlns:th="https://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
 
 <!-- START OF HEADER -->
 <head>
@@ -8,50 +8,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Tab Design -->
-  <title>Blog Posts</title>
-  <link rel="shortcut icon" type="image/png" href="../img/iconImage.jpg">
+  <title>Day Two</title>
+  <link rel="shortcut icon" type="image/png" href="../../svg/icon.svg">
 
   <!-- Style Sheet -->
-  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../../css/blog-style.css">
+  <link rel="stylesheet" href="../../style.css">
 
   <!--Box Icons-->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- BodyMovin Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.11.0/lottie.min.js"></script>
+
 </head>
 
 <!-- START OF BODY -->
 <body>
 <header class="header">
   <a href="../../index.html" class="logo">Luke.</a>
-
   <div class="bx bx-menu" id="menu-icon"></div>
-
   <nav class="navbar">
-    <a href="#home" class="active">Home</a>
-    <a href="#featured">Featured Posts</a>
-    <a href="#all">All Posts</a>
-
+    <a href="../../index.html">Home</a>
+    <a href="../blogposts.html">Blog</a>
+    <a href="#" class="active">Current Post</a>
     <span class="active-nav"></span>
   </nav>
 </header>
 
 
-
 <!-- HOME PAGE DESIGN -->
-<section class="home">
-  <!-- thank you section content -->
-  <div class="home-content">
+<section class="blog-page">
 
-    <h1><span>Documenting My Growth</span> As A</h1>
-    <div class="text-animate">
-      <h3>Full-Stack Developer</h3>
-    </div>
+  <!-- BLOG TITLE -->
+  <h2 class="heading">Day 2:<br>
+    Unveiling the Power of CSS Formatting and Unleashing Creative Potential
+  </h2>
 
-    <!-- button box -->
-    <div class="btn-box">
-      <a href="../index.html" class="btn">Go Back</a>
-    </div>
+  <!-- BLOG IMAGE -->
+  <div class="blog-page-img">
+    <img src="../../img/trifecta.png" alt="blog img">
   </div>
 
+  <!-- BLOG CONTENT -->
+  <div class="blog-page-content">
+    <h3>Unveiling the Power of CSS Formatting and Unleashing Creative Potential</h3>
+
+    <p>So, my journey following the guide continued, but I couldn't resist exploring CSS formatting and how we can share different classes. Let me tell you, it's like unravelling a secret code. I thought it would be a piece of cake, but boy, was I wrong! It's like solving a puzzle—making sure the main class cascades down to others smoothly. But you know what? It's just like that cool stuff we learn in programming—polymorphism and inheritance. Who would've thought CSS could be so fascinating?</p>
+    <p>As I move forward, I can't help but daydream about future plans. I'm envisioning infographics, funky elements filling up the squares in the portfolio section, and using the right column to give juicy descriptions. It's going to be mind-blowing, trust me! I even thought about adding interactive programs directly into my website—picture this: click a box, and boom! The program runs in a virtual compiler using an API. It's like bringing magic to life! Of course, I still need to get those buttons up and running, but I'm confident it'll be a breeze once I nail the foundations.</p>
+    <p>Today was all about discovering the wonders of inheritance, or as they call it, 'cascading,' in CSS. I'm getting pretty good at using those div tags to create neat sections on my website. And hey, here's another trick—I can link buttons to specific parts of the page using IDs. Talk about making navigation a piece of cake!</p>
+
+    <p>Wanna tag along on this thrilling web development ride? Get ready to unleash your creativity, learn some awesome CSS tricks, and witness my website transform right before your eyes. Stay tuned for more updates and mind-blowing designs!</p>
+    <p>As the day comes to an end, I can proudly say that my website is looking snazzy with the 'About' and 'Portfolio' sections in place. Trust me, it's just the beginning of this fantastic web development journey. So, keep your eyes peeled for the next chapter, where I'll continue to unravel the secrets of the web and share my exciting experiences. Let's rock this web development adventure together!</p>
+  </div>
 </section>
 
 <!-- FOOTER SECTION DESIGN -->
@@ -68,7 +77,7 @@
 </footer>
 
 <!---- Script -->
-<script defer src="../script.js"></script>
-</body>
+<script defer src="../../script.js"></script>
 
+</body>
 </html>
