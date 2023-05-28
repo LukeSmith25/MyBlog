@@ -15,6 +15,7 @@
 
 /* Variable Declarations */
 :root {
+    /* Redeclare colors for light and dark mode */
     --bg-color: #081b29;
     --second-bg-color: #112e42;
     --text-color: #ededed;
